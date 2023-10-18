@@ -2,6 +2,7 @@
 using BiblotecaUsuarioG2_2024;
 using System.Collections;
 using System.Windows.Forms;
+using ReproductorMusica_G2_GRAJ;
 
 namespace Autetocacion_G2_GRAJ
 {
@@ -36,8 +37,14 @@ namespace Autetocacion_G2_GRAJ
 
                 if (txtNombre.Text == miUusario.NomUusario && txtContraseña.Text ==miUusario.Password)
                 {
-                    MessageBox.Show("Ingreso correcto");
+                   // MessageBox.Show("Ingreso correcto");
                     ingresoCorrecto = true;
+                    txtNombre.Clear();
+                    txtContraseña.Clear();
+                    FormReproductor formReproductor = new FormReproductor(this);
+                    formReproductor.Show();
+                    this.Hide();
+
                     break;
                 }
                

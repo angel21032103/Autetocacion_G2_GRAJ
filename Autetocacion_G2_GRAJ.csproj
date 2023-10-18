@@ -76,6 +76,10 @@
       <Project>{b9118eb2-d9b2-4b3f-8c1b-6ad2ad4ebd5d}</Project>
       <Name>BiblotecaUsuarioG2_2024</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ReproductorMusica_G2_GRAJ\ReproductorMusica_G2_GRAJ.csproj">
+      <Project>{1904d827-2370-4705-b56b-58751a2d82f5}</Project>
+      <Name>ReproductorMusica_G2_GRAJ</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
